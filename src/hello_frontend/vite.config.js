@@ -34,9 +34,7 @@ export default defineConfig({
     alias: [
       {
         find: "declarations",
-        replacement: fileURLToPath(
-          new URL("../declarations", import.meta.url)
-        ),
+        replacement: fileURLToPath(new URL("../declarations", import.meta.url)),
       },
     ],
     dedupe: ['@dfinity/agent'],
